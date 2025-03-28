@@ -1,0 +1,13 @@
+matplotlib
+scikit-learn
+spacy
+nltk
+transformers
+datasets
+scikit-learn
+pandas
+jupyter
+ipykernel
+pytorch
+# torch
+# accelerate==0.26.0

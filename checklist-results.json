@@ -1,0 +1,2338 @@
+{
+  "capabilities": [
+    {
+      "capability_name": "Long-distance dependencies between predicate and ARG0",
+      "capability_description": "Capability description.",
+      "capability_category": "syntactic",
+      "tests": [
+        {
+          "test_name": "Effect of injecting relative clause between predicate and ARG0",
+          "test_description": "Test description.",
+          "test_type": "INV",
+          "samples": [
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "ARG0",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 20.0,
+          "failure_rate_bert": 30.0
+        },
+        {
+          "test_name": "Sentences without relative clause between predicate and ARG0",
+          "test_description": "Tests the SRL system's ability to identify the ARG0 in simple sentences without relative clauses.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 70.0,
+          "failure_rate_bert": 20.0
+        },
+        {
+          "test_name": "Sentences with relative clause between predicate and ARG0",
+          "test_description": "Tests the SRL system's ability to identify the ARG0 in long sentences with relative clauses between predicate and ARG0.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 90.0,
+          "failure_rate_bert": 50.0
+        }
+      ],
+      "failure_rate_logreg": 60.0,
+      "failure_rate_bert": 33.333333333333336
+    },
+    {
+      "capability_name": "Long-distance dependencies between predicate and ARG1",
+      "capability_description": "Capability description.",
+      "capability_category": "syntactic",
+      "tests": [
+        {
+          "test_name": "Effect of injecting adverbial or participial phrase between predicate and ARG1",
+          "test_description": "Test description.",
+          "test_type": "INV",
+          "samples": [
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 9,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 11,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 8,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "ARG1",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 7,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 4,
+                "relevant_index_item2": 9,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 7,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "ARG1",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 4,
+                "relevant_index_item2": 7,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 4,
+                "relevant_index_item2": 9,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 8,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "ARG1",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 7,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 60.0,
+          "failure_rate_bert": 60.0
+        },
+        {
+          "test_name": "Sentence without adverbial or participial phrase between predicate and ARG1",
+          "test_description": "This tests the system's baseline ability to predict the ARG1 role, without added syntactic distance.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 10.0,
+          "failure_rate_bert": 0.0
+        },
+        {
+          "test_name": "Sentence with adverbial or participial phrase between predicate and ARG1",
+          "test_description": "This tests the system's ability to predict the ARG1 role, with added syntactic distance.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 70.0,
+          "failure_rate_bert": 60.0
+        }
+      ],
+      "failure_rate_logreg": 46.666666666666664,
+      "failure_rate_bert": 40.0
+    },
+    {
+      "capability_name": "Robustness to noise in the form of typos",
+      "capability_description": "Evaluates the impact of lexical noise, in both proper nouns and common nouns, in the form of typos on ARG0 labeling.",
+      "capability_category": "lexical",
+      "tests": [
+        {
+          "test_name": "Effect of typos in proper nouns as ARG0 on ARG0 labeling",
+          "test_description": "Tests the system's robustness to typos in proper nouns affecting ARG0 labeling.",
+          "test_type": "INV",
+          "samples": [
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "ARG0",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 30.0,
+          "failure_rate_bert": 20.0
+        },
+        {
+          "test_name": "Effect of typos in common nouns as ARG0 on ARG0 labeling",
+          "test_description": "Tests the system's robustness to typos in common nouns affecting ARG0 labeling.",
+          "test_type": "INV",
+          "samples": [
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "ARG0",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "ARG1",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "ARG0",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 20.0,
+          "failure_rate_bert": 0.0
+        },
+        {
+          "test_name": "Sentences without typos in ARG0 for proper noun ARG0 labeling",
+          "test_description": "Tests the system's baseline ability to identify ARG0 proper nouns without typos.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 60.0,
+          "failure_rate_bert": 0.0
+        },
+        {
+          "test_name": "Sentences with typos in ARG0 for proper noun ARG0 labeling",
+          "test_description": "Tests the system's robustness to typos in proper nouns affecting ARG0 labeling.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 90.0,
+          "failure_rate_bert": 20.0
+        },
+        {
+          "test_name": "Sentences without typos in ARG0 for common noun ARG0 labeling",
+          "test_description": "Tests the system's baseline ability to identify ARG0 common nouns without typos.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 60.0,
+          "failure_rate_bert": 0.0
+        },
+        {
+          "test_name": "Sentences with typos in ARG0 for common noun ARG0 labeling",
+          "test_description": "Tests the system's ability to identify ARG0 proper nouns with typos.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 80.0,
+          "failure_rate_bert": 0.0
+        }
+      ],
+      "failure_rate_logreg": 56.666666666666664,
+      "failure_rate_bert": 6.666666666666667
+    },
+    {
+      "capability_name": "Effect of semantic atypicality in active voice syntactically simple SVO sentences on ARG0 labeling",
+      "capability_description": "Tests the system's ability to handle sentences with atypical semantic roles as ARG0, such as inanimate objects and abstract concepts. Only active voice syntactically simple SVO sentences are considered.",
+      "capability_category": "lexical",
+      "tests": [
+        {
+          "test_name": "Animate objects as ARG0",
+          "test_description": "Tests the system's ability to correctly identify animate objects as ARG0, used as a baseline to compare inanimate objects as ARG0 against.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "ARG0",
+                "bert_label": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 90.0,
+          "failure_rate_bert": 0.0
+        },
+        {
+          "test_name": "Inanimate objects as ARG0",
+          "test_description": "Tests the system's ability to correctly identify inanimate objects as ARG0.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 100.0,
+          "failure_rate_bert": 40.0
+        },
+        {
+          "test_name": "Animate versus inanimate concepts as ARG0",
+          "test_description": "Tests the system's ability to correctly identify animate versus inanimate concepts as ARG0.",
+          "test_type": "INV",
+          "samples": [
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "ARG0",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 1,
+                "relevant_index_item2": 1,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 10.0,
+          "failure_rate_bert": 40.0
+        },
+        {
+          "test_name": "Non-abstract concepts as ARG0",
+          "test_description": "Tests the system's ability to correctly identify non-abstract concepts as Arg-0, used as a baseline to compare against abstract concepts as Arg-0.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 100.0,
+          "failure_rate_bert": 70.0
+        },
+        {
+          "test_name": "Abstract concepts as ARG0",
+          "test_description": "Tests the system's ability to correctly identify abstract concepts as Arg-0.",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG0",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG0",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 100.0,
+          "failure_rate_bert": 90.0
+        },
+        {
+          "test_name": "Abstract vs non-abstract concepts as ARG0",
+          "test_description": "Tests the system's sensitivity to using abstract vs non-abstract concepts as ARG0.",
+          "test_type": "INV",
+          "samples": [
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG0",
+                "bert_prediction_item2": "ARG0",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 0,
+                "relevant_index_item2": 0,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 0.0,
+          "failure_rate_bert": 30.0
+        }
+      ],
+      "failure_rate_logreg": 66.66666666666667,
+      "failure_rate_bert": 45.0
+    },
+    {
+      "capability_name": "Dealing with dative verb alternations",
+      "capability_description": "Tests the system's ability to correctly identify dative verb alternations.",
+      "capability_category": "syntactic",
+      "tests": [
+        {
+          "test_name": "Dative verb alternations effect on ARG1",
+          "test_description": "Tests whether the system can correctly identify the ARG1 in dative verb alternations.",
+          "test_type": "INV",
+          "samples": [
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 4,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "ARG1",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 4,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 4,
+                "relevant_index_item2": 5,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 4,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 4,
+                "relevant_index_item2": 6,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 4,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 5,
+                "logreg_prediction_item1": "ARG1",
+                "logreg_prediction_item2": "ARG1",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 6,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 3,
+                "relevant_index_item2": 5,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "ARG1",
+                "bert_prediction_item2": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "relevant_index_item1": 4,
+                "relevant_index_item2": 6,
+                "logreg_prediction_item1": "_",
+                "logreg_prediction_item2": "_",
+                "bert_prediction_item1": "_",
+                "bert_prediction_item2": "_",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ]
+          ],
+          "failure_rate_logreg": 0.0,
+          "failure_rate_bert": 0.0
+        },
+        {
+          "test_name": "Dative verb alternations with prepositional dative construction for ARG1",
+          "test_description": "Tests whether the system can correctly identify the ARG1 in dative verb alternations with prepositional dative construction",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 80.0,
+          "failure_rate_bert": 30.0
+        },
+        {
+          "test_name": "Dative verb alternations with double object construction for ARG1",
+          "test_description": "Tests whether the system can correctly identify the ARG1 in dative verb alternations with double object construction",
+          "test_type": "MFT",
+          "samples": [
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "ARG1",
+                "bert_label": "ARG1",
+                "logreg_correct": true,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "ARG1",
+                "logreg_correct": false,
+                "bert_correct": true
+              }
+            ],
+            [
+              {
+                "gold_label": "ARG1",
+                "logreg_label": "_",
+                "bert_label": "_",
+                "logreg_correct": false,
+                "bert_correct": false
+              }
+            ]
+          ],
+          "failure_rate_logreg": 80.0,
+          "failure_rate_bert": 30.0
+        }
+      ],
+      "failure_rate_logreg": 53.333333333333336,
+      "failure_rate_bert": 20.0
+    }
+  ]
+}
